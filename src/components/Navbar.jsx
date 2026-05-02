@@ -12,7 +12,7 @@ function Navbar() {
     ];
 
     return (
-        <div className="relative h-19 mb-10 w-full">
+        <div className="relative h-19 w-full">
             <nav className='fixed top-0 left-0 w-full z-50 bg-dark/80 backdrop-blur-sm border-b border-gold/20'>
                 <div className="container mx-auto px-6 py-4 flex justify-between items-center">
 
