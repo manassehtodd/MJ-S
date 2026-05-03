@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home'
 import Collections from './pages/Collections'
 import CollectionDetails from './pages/CollectionsDetails'
@@ -10,6 +11,7 @@ import { Analytics } from '@vercel/analytics/react';
 function App(){
   return(
     <>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
