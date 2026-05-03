@@ -1,4 +1,5 @@
 import logo from '/src/assets/mj_logo.png';
+import { Link } from 'react-router-dom';
 
 function About() {
     const stats = [
@@ -29,7 +30,7 @@ function About() {
                     <img
                         src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=800&auto=format&fit=crop&q=60"
                         alt="M&J Stitches Tailor at work"
-                        className="w-full h-[550px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                        className="w-full h-137.5 object-cover grayscale hover:grayscale-0 transition-all duration-700"
                     />
                     {/* Floating Logo */}
                     <div className="absolute -bottom-6 -right-6 bg-dark-card p-4 border border-gold/20">
@@ -80,14 +81,12 @@ function About() {
                     </div>
 
                     {/* CTA */}
-                    <a
-                        href="https://wa.me/2348061635254"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <Link
+                        to="/contact"
                         className="w-fit px-6 py-3 border border-gold text-gold text-xs tracking-widest uppercase hover:bg-gold hover:text-dark transition-all duration-300"
                     >
                         Book a Fitting
-                    </a>
+                    </Link>
                 </div>
             </div>
 

@@ -8,7 +8,7 @@ function Navbar() {
     const navLinks = [
         { name: 'Home', href: '/' },
         { name: 'Collections', href: '/collections' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Contact', href: '/contact' },
     ];
 
     return (
@@ -35,7 +35,7 @@ function Navbar() {
 
                     {/* Desktop CTA */}
                     
-                        <a href="https://wa.me/2348061635254"
+                        <a href={navLinks[2].href}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hidden md:block px-5 py-2 border border-gold text-gold text-sm tracking-widest uppercase hover:bg-gold hover:text-dark transition-all duration-300"
@@ -77,7 +77,7 @@ function Navbar() {
                     ))}
 
                     
-                        <a href="https://wa.me/2348061635254"
+                        <a href={navLinks[2].href}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-8 py-3 border border-gold text-gold text-sm tracking-widest uppercase text-center hover:bg-gold hover:text-dark transition-all duration-300"

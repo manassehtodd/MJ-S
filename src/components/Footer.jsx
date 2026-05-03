@@ -1,4 +1,5 @@
 import logo from '/src/assets/mj_logo.png';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     const navLinks = [
@@ -100,13 +101,11 @@ function Footer() {
                         +234 806 163 5254
                     </a>
                     
-                        <a href="https://wa.me/2348061635254"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        <Link to="/contact"
                         className="w-fit mt-2 px-6 py-3 bg-gold text-dark text-xs tracking-widest uppercase font-semibold hover:bg-gold/80 transition-all duration-300"
                     >
                         Book a Fitting
-                    </a>
+                    </Link>
                 </div>
 
             </div>

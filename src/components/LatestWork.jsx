@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import { Navigation } from "swiper/modules";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 const latestWorks = [
     {
@@ -57,13 +58,11 @@ function LatestWork() {
                         Tailored to match each customer's needs and preferences — from the material down to the final stitch.
                     </p>
                     
-                        <a href="https://wa.me/2348061635254"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        <Link to="/contact"
                         className="px-6 py-3 bg-gold text-dark text-xs tracking-widest uppercase font-semibold hover:bg-gold/80 transition-all duration-300"
                     >
                         Contact the Tailor
-                    </a>
+                    </Link>
                 </div>
             </div>
 
